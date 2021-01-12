@@ -170,11 +170,7 @@ public class Human {
 //        a= sc.hasNext("m");
         String a2="y" ;
         String a3="n";
-        if (a1.equals(a2)){
-            a=true;
-        }
-        else {a=false;
-        }
+        a= a1.equals(a2);
         sc.nextLine();
         System.out.println("Имя?");
         b= sc.next();
