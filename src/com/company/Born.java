@@ -21,7 +21,6 @@ public interface Born  {
             }
             System.out.println("имя?");
             n = scan.next();
-            System.out.println(n);
             if (firstHum.gender) {
                   s = firstHum.surname;
             } else {
@@ -36,11 +35,11 @@ public interface Born  {
                   v = (float) ((secHum.ves + 0.05 * firstHum.ves) - secHum.ves);
             }
             if (gend) {
-                  Man baby1 = new Man(gend, n, s, r, v);
+                  Man baby1 = new Man(true, n, s, r, v);
                   System.out.println(baby1);
 //                  return baby1;
             } else {
-                  Woman baby1 = new Woman(gend, n, s+"a", r, v);
+                  Woman baby1 = new Woman(false, n, s+"a", r, v);
                   System.out.println(baby1);
 //                  return baby1;
             }

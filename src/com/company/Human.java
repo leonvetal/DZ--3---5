@@ -160,30 +160,29 @@ public class Human {
         }
 
     }
-    public static Human scanHum(){
-        Scanner sc= new Scanner(System.in);
+    public static Human scanHum() {
+        Scanner sc = new Scanner(System.in);
         boolean a;
-        String b,c, a1;
-        float d,e;
+        String b, c, a1;
+        float d, e;
         System.out.println("Пол?//y,m for man");
-        a1= sc.next();
+        a1 = sc.next();
 //        a= sc.hasNext("m");
-        String a2="y" ;
-        String a3="n";
-        a= a1.equals(a2);
+        String a2 = "y";
+        String a3 = "n";
+        a = a1.equals(a2);
         sc.nextLine();
         System.out.println("Имя?");
-        b= sc.next();
+        b = sc.next();
         System.out.println("Фамилия?");
-        c=sc.next();
+        c = sc.next();
         System.out.println("Рост?");
-        d=sc.nextFloat();
+        d = sc.nextFloat();
         System.out.println("Вес?");
-        e= sc.nextFloat();
-        Human hum1=new Human(a,b,c,d,e);
-        return hum1;
+        e = sc.nextFloat();
+        return new Human(a,b,c,d,e);
+
 
     }
-
 
 }

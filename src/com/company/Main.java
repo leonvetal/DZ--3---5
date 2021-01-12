@@ -1,6 +1,5 @@
 package com.company;
 
-import java.util.Random;
 
 public class Main {
 
@@ -9,8 +8,8 @@ public class Main {
        Human human1= Human.scanHum();
         System.out.println("Укажите данные второго человека");
         Human human2= Human.scanHum();
-//        Man human1= new Man(true,"Ivan","Ivanov",180,80);
-//        Woman human2= new Woman(false,"Ira","Irinova",170,50);
+//        Man human1= new Man(true,"Ivan","Ivanov",180,84);
+//        Woman human2= new Woman(false,"Ira","Irinova",172,57);
         Human humanSr= new Human(false,"xxx","xxxx",160,45);
 
 //        humanSr.speak(human1,human2);
